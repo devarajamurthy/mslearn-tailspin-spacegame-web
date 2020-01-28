@@ -36,7 +36,13 @@ steps:
     inputs:
       command: 'restore'
       projects: '**/*.csproj'
-  
+
+  - task: DotNetCoreInstaller@0
+      inputs:
+        packageType: 'sdk'
+        version: '3.1.100' 
+      displayName: Install .NET Core 3.1
+
   - task: DotNetCoreCLI@3
     displayName: 'Build the project - Release'
     inputs:
