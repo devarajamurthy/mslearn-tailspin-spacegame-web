@@ -8,6 +8,7 @@ namespace TailSpin.SpaceGame.Web
         public static void Main(string[] args)
         {
             //THis is netcore project
+            // This is change from other user
             CreateWebHostBuilder(args).Build().Run();
         }
 
